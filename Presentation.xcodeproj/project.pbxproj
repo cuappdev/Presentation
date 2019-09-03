@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2B0BE0A231E0CE20033B8BC /* Array+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0BE09231E0CE20033B8BC /* Array+Sugar.swift */; };
+		C2B0BE0C231E0CF90033B8BC /* PagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0BE0B231E0CF90033B8BC /* PagesController.swift */; };
+		C2B0BE0E231E0D190033B8BC /* UIStoryboard+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B0BE0D231E0D190033B8BC /* UIStoryboard+Sugar.swift */; };
 		D523B0E71C43AC70001AD1EC /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523B0DC1C43AC70001AD1EC /* Animatable.swift */; };
 		D523B0E81C43AC70001AD1EC /* DissolveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523B0DD1C43AC70001AD1EC /* DissolveAnimation.swift */; };
 		D523B0E91C43AC70001AD1EC /* PopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523B0DE1C43AC70001AD1EC /* PopAnimation.swift */; };
@@ -16,10 +19,12 @@
 		D523B0ED1C43AC70001AD1EC /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523B0E31C43AC70001AD1EC /* Position.swift */; };
 		D523B0EE1C43AC70001AD1EC /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523B0E41C43AC70001AD1EC /* PresentationController.swift */; };
 		D523B0EF1C43AC70001AD1EC /* SlideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D523B0E51C43AC70001AD1EC /* SlideController.swift */; };
-		D523B0F21C43AE94001AD1EC /* Pages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D523B0F01C43AE94001AD1EC /* Pages.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2B0BE09231E0CE20033B8BC /* Array+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Sugar.swift"; sourceTree = "<group>"; };
+		C2B0BE0B231E0CF90033B8BC /* PagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesController.swift; sourceTree = "<group>"; };
+		C2B0BE0D231E0D190033B8BC /* UIStoryboard+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Sugar.swift"; sourceTree = "<group>"; };
 		D523B0CD1C43AB90001AD1EC /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D523B0D91C43AC70001AD1EC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D523B0DC1C43AC70001AD1EC /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
@@ -31,7 +36,6 @@
 		D523B0E31C43AC70001AD1EC /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		D523B0E41C43AC70001AD1EC /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
 		D523B0E51C43AC70001AD1EC /* SlideController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideController.swift; sourceTree = "<group>"; };
-		D523B0F01C43AE94001AD1EC /* Pages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pages.framework; path = Carthage/Build/iOS/Pages.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D523B0F21C43AE94001AD1EC /* Pages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				D523B0E51C43AC70001AD1EC /* SlideController.swift */,
 				D523B0DB1C43AC70001AD1EC /* Animations */,
 				D523B0E11C43AC70001AD1EC /* Extensions */,
+				C2B0BE0B231E0CF90033B8BC /* PagesController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				D523B0E21C43AC70001AD1EC /* CGPointExtension.swift */,
+				C2B0BE09231E0CE20033B8BC /* Array+Sugar.swift */,
+				C2B0BE0D231E0D190033B8BC /* UIStoryboard+Sugar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -107,7 +113,6 @@
 		D523B0F51C43AF9B001AD1EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D523B0F01C43AE94001AD1EC /* Pages.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = D523B0C31C43AB90001AD1EC;
@@ -193,13 +199,12 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Pages.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -208,11 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B0BE0C231E0CF90033B8BC /* PagesController.swift in Sources */,
 				D523B0ED1C43AC70001AD1EC /* Position.swift in Sources */,
 				D523B0E91C43AC70001AD1EC /* PopAnimation.swift in Sources */,
+				C2B0BE0A231E0CE20033B8BC /* Array+Sugar.swift in Sources */,
 				D523B0E71C43AC70001AD1EC /* Animatable.swift in Sources */,
 				D523B0EC1C43AC70001AD1EC /* CGPointExtension.swift in Sources */,
 				D523B0E81C43AC70001AD1EC /* DissolveAnimation.swift in Sources */,
+				C2B0BE0E231E0D190033B8BC /* UIStoryboard+Sugar.swift in Sources */,
 				D523B0EB1C43AC70001AD1EC /* Content.swift in Sources */,
 				D523B0EA1C43AC70001AD1EC /* TransitionAnimation.swift in Sources */,
 				D523B0EF1C43AC70001AD1EC /* SlideController.swift in Sources */,
