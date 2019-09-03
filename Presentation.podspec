@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Presentation"
   s.summary          = "Presentation helps you to make tutorials, release notes and animated pages."
-  s.version          = "4.2.1"
+  s.version          = "4.2.2"
   s.homepage         = "https://github.com/cuappdev/Presentation"
   s.license          = 'MIT'
   s.author           = { "Hyper" => "ios@hyper.no" }

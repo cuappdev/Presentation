@@ -56,7 +56,7 @@ import UIKit
         self.init(
             transitionStyle: transitionStyle,
             navigationOrientation: navigationOrientation,
-            options: options as [String : Any]?
+            options: options
         )
 
         add(pages)
@@ -70,7 +70,7 @@ import UIKit
 
         view.addSubview(bottomLineView)
         addConstraints()
-        view.bringSubview(toFront: bottomLineView)
+        view.bringSubviewToFront(bottomLineView)
         goTo(startPage)
     }
 
